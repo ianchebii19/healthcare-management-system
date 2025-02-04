@@ -66,7 +66,7 @@ const RegisterForm = ({ user }: { user: User }) => {
         name: values.name,
         email: values.email,
         phone: values.phone,
-        birthDate: new Date(values.birthDate),
+        birthDate: new Date(values.birthDate).toISOString(),
         gender: values.gender,
         address: values.address,
         occupation: values.occupation,
