@@ -53,6 +53,7 @@ declare type UpdateAppointmentParams = {
   appointmentId: string;
   userId: string;
   timeZone: string;
-  appointment: Appointment; // Ensure Appointment is defined elsewhere
-  type: string; // Consider defining a more specific type if possible
-};
+  appointment: { primaryPhysician: string; schedule: Date; status: Status; cancellationReason: string | undefined; }; 
+  type: "schedule" | "create" | "cancel"; 
+}
+
