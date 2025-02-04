@@ -38,7 +38,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
       </div>
 
       <Image
-        src="/doct.webp"
+        src="/docta.jpeg"
         alt="Doctor"
         width={1000}
         height={1000}
