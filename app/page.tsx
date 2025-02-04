@@ -1,5 +1,6 @@
 import { PatientForm } from "@/components/forms/PatientForm";
 import { PasskeyModal } from "@/components/PassKeyModal";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,6 +16,11 @@ const Home = async ({ searchParams }: SearchParamProps) => {
   const isAdmin = await searchParams?.admin === "true";
 
   return (
+    <div>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+   
     <div className="flex h-screen max-h-screen">
       {isAdmin && <PasskeyModal />}
       <div className="remove-scrollbar container my-auto">
@@ -38,13 +44,14 @@ const Home = async ({ searchParams }: SearchParamProps) => {
       </div>
 
       <Image
-        src="/docta.jpeg"
+        src="/doct.webp"
         alt="Doctor"
         width={1000}
         height={1000}
         className="side-img md:max-w-[50%] sm:p-4 rounded-lg"
         priority
       />
+    </div>
     </div>
   );
 };

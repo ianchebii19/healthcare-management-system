@@ -16,6 +16,7 @@ const fontSans =  Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "MediCare",
   description: "Heathcare Management System",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
