@@ -31,7 +31,7 @@ const Register = async ({ params }: { params: { userId: string } }) => {
         alt="Doctor"
         width={1000}
         height={1000}
-        className="side-mg md:max-w-[40%] sm:p-4 rounded-lg"
+        className="side-mg md:max-w-[40%] sm:p-4 rounded-lg hidden sm:block"
       />
     </div>
   );
