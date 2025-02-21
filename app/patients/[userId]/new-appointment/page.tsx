@@ -34,7 +34,7 @@ const Appointment = async ({ params }: SearchParamProps) => {
             type="create"
           />
 
-          <p className="copyright mt-10 py-12">© 2024 CarePluse</p>
+          <p className="copyright mt-10 py-12">© 2025 Medicare</p>
         </div>
       </section>
 
